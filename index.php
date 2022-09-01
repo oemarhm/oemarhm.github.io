@@ -1,0 +1,236 @@
+<?php
+include('koneksi.php');
+include('header.php');
+?>
+
+<body class="bg-light">
+  <!-- Navbar -->
+  <nav class="navbar navbar-light fixed-top bg-light shadow-sm ">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="#">O.H.M</a>
+      <div class="dropdown">
+        <button class="btn btn-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-list"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#home">Home</a></li>
+          <li><a class="dropdown-item" href="#services">Services</a></li>
+          <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
+          <li><a class="dropdown-item" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Akhir Navbar -->
+
+  <!-- Home -->
+  <section class="home" id="home">
+    <div class="container-lg">
+      <div class="row mt-4 min-vh-100 align-items-center align-content-center">
+        <div class="col-md-6 mt-5 mt-md-0">
+          <div class="home-img text-center">
+            <img src="img/ohm.jpg" alt="profile" class="rounded-circle w-50">
+          </div>
+        </div>
+        <div class="col-md-6 order-md-first mt-5 mt-md-0">
+          <div class="home-text">
+            <p class="text-muted mb-1">Hello I'm</p>
+            <h1 class="text-uppercase fs-1 fw-bold">Warga sipil</h1>
+            <h2 class="fs-4">Oemar Hatta</h2>
+            <p class="text-muted">Selamat datang bagi yang membaca tulisan ini. di situs ini berisi tentang apa yang ingin saya isikan. dan apapun yang saya isikan disini itu adalah hasil dari proses belajar saya.</p>
+          </div>
+          <div class="social-link">
+            <a href="https://twitter.com/oemarhm" class="text-dark me-3"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/oumuegea/" class="text-dark me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-dark me-3"><i class="bi bi-discord"></i></a>
+          </div>
+          <div>
+            <a href="#portfolio" class="btn btn-dark px-3 mt-3">My Work</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Home -->
+
+  <!-- Services -->
+  <section class="services py-5" id="services">
+    <div class="container-lg py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title text-center">
+            <h2 class="fw-bold mb-5">What I Learned</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="service-item shadow-sm p-4 rounded bg-white">
+            <div class="icon my-3 fs-2">
+              <i class="bi bi-window"></i>
+            </div>
+            <h3 class="fs-5 py-2">Web Programmer</h3>
+            <p class="text-muted">Saya adalah programmer pemula. saya belajar banyak untuk pembuatan web. salah satunya web portofolio ini.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="service-item shadow-sm p-4 rounded bg-white">
+            <div class="icon my-3 fs-2">
+              <i class="bi bi-lightbulb"></i>
+            </div>
+            <h3 class="fs-5 py-2">Graphic Design</h3>
+            <p class="text-muted">Desain grafis merupakan salah satu hal yang saya sukai sejak dalam kandungan. dan saya tertarik untuk mempelajarinya.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="service-item shadow-sm p-4 rounded bg-white">
+            <div class="icon my-3 fs-2">
+              <i class="bi bi-box"></i>
+            </div>
+            <h3 class="fs-5 py-2">3D Modeling</h3>
+            <p class="text-muted">Sejak kecil kartun dan video game adalah kesukaan saya. sampai akhirnya saya penasaran dengan cara pembuatannya.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Services -->
+
+  <!-- Portfolio -->
+  <section class="portfolio py-5" id="portfolio">
+    <div class="container-lg py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title text-center">
+            <h2 class="fw-bold mb-5">My Work</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item">
+            <img src="img/gallery/corporate identity.jpg" class="w-100 img-thumbnail" alt="portfolio item">
+            <h3 class="text-capitalize fs-5 my-2">Corporate Identity</h3>
+            <p class="text-muted mb-4">Corporate Identity</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item">
+            <img src="img/gallery/living.jpg" class="w-100 img-thumbnail" alt="portfolio item">
+            <h3 class="text-capitalize fs-5 my-2">My First Modeling</h3>
+            <p class="text-muted mb-4">3D Modeling</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item">
+            <img src="img/gallery/stand up pouch.jpg" class="w-100 img-thumbnail" alt="portfolio item">
+            <h3 class="text-capitalize fs-5 my-2">Stand Up Pouch</h3>
+            <p class="text-muted mb-4">Packaging</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item">
+            <img src="img/gallery/safe.jpg" class="w-100 img-thumbnail" alt="portfolio item">
+            <h3 class="text-capitalize fs-5 my-2">Flat illustration</h3>
+            <p class="text-muted mb-4">Illustration</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item">
+            <img src="img/gallery/Retro Computer.png" class="w-100 img-thumbnail" alt="portfolio item">
+            <h3 class="text-capitalize fs-5 my-2">Retro Computer</h3>
+            <p class="text-muted mb-4">3D Modeling</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item">
+            <img src="img/gallery/ayam.jpg" class="w-100 img-thumbnail" alt="portfolio item">
+            <h3 class="text-capitalize fs-5 my-2">Chicken</h3>
+            <p class="text-muted mb-4">Illustration</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Portfolio -->
+
+  <!-- Contact -->
+  <section class="contact py-5" id="contact">
+    <div class="container-lg py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title text-center">
+            <h2 class="fw-bold mb-5">Contact</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <div class="contact-item d-flex mb-3">
+            <div class="icon fs-4">
+              <i class="bi bi-envelope-fill"></i>
+            </div>
+            <div class="text ms-3">
+              <h3 class="fs-5">Email</h3>
+              <p class="text-muted">oemarhm512@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item d-flex mb-3">
+            <div class="icon fs-4">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="text ms-3">
+              <h3 class="fs-5">Phone</h3>
+              <p class="text-muted">0813-3309-6903</p>
+            </div>
+          </div>
+          <div class="contact-item d-flex mb-3">
+            <div class="icon fs-4">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="text ms-3">
+              <h3 class="fs-5">Address</h3>
+              <p class="text-muted">Kendal, Indonesia</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="contact-form">
+            <div class="alert alert-success alert-dismissible fade show text-dark d-none my-alert" role="alert">
+              <strong>Terima Kasih!</strong> Pesan anda sudah kami terima.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form action="input.php" method="post">
+              <div class="row">
+                <div class="col-lg-6 mb-3">
+                  <input type="text" placeholder="Name" class="form-control" id="name" aria-describedby="name" name="name" />
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <input type="email" placeholder="Email" class="form-control" id="email" aria-describedby="email" name="email" />
+                </div>
+              </div>
+              <div class="mb-3">
+                <input type="text" placeholder="Subject" class="form-control" id="subject" aria-describedby="subject" name="subject" />
+              </div>
+              <div class="mb-3">
+                <textarea placeholder="Your Message" class="form-control" id="message" rows="5" name="message"></textarea>
+              </div>
+
+              <button type="submit" name="submit" class="btn btn-danger btn-kirim">Send</button>
+
+              <button class="btn btn-danger btn-loading d-none" type="button" disabled>
+                <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Contact -->
+
+  <script src="asset/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
