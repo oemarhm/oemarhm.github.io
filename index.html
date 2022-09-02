@@ -217,7 +217,7 @@
               <strong>Terima Kasih!</strong> Pesan anda sudah kami terima.
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-            <form action="input.php" method="post">
+            <form name="oemarhm-contact-form">
               <div class="row">
                 <div class="col-lg-6 mb-3">
                   <input type="text" placeholder="Name" class="form-control" id="name" aria-describedby="name" name="name" />
@@ -248,6 +248,19 @@
   <!-- Akhir Contact -->
 
   <script src="asset/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby71bnGG0TlVYYPmEovX0nScEzm3CtX2s4XrAq0SDM-TnQ7SoFphaOPhWTzAfe5SRkP/exec'
+    const form = document.forms['oemarhm-contact-form']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
 </body>
 
 </html>
